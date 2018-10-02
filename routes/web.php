@@ -18,4 +18,6 @@ Route::get('password/reseet/{token}','Auth\ResetPasswordController@showResetForm
 Route::post('password/reset','Auth\ResetPasswordController@reset');
 
 //Users Routes
-Route::get('users/{user}','UsersController@show')->name('users.show');
+// Route::get('users/{user}/show','UsersController@show')->name('users.show');
+// Route::get('users/{user}/edit','UsersController@edit')->name('users.edit');
+Route::resource('users','UsersController');
