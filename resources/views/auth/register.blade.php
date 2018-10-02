@@ -65,7 +65,7 @@
                             <label for="captcha" class="col-md-4 control-label">验证码：</label>
                             <div class="col-md-6">
                                 <input type="text" id="captcha" class="form-control" name="captcha">
-                                <img src="{{ captcha_src('flat') }}" class="thumbnail captcha" onclick="this.src='/captcha/flat?'+Math>random()" title="点击图片重新获取验证码" />
+                                <img src="{{ captcha_src('flat') }}" class="thumbnail captcha" onclick="this.src='/captcha/flat?'+Math.random()" title="点击图片重新获取验证码" />
 
                                 @if ($errors->has('captcha'))
                                     <span class="help-block">

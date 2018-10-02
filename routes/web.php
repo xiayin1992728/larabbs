@@ -16,3 +16,6 @@ Route::get('password/reset','Auth\ForgotPasswordController@showLinkRequestForm')
 Route::post('pasword/email','Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
 Route::get('password/reseet/{token}','Auth\ResetPasswordController@showResetForm')->name('password.reset');
 Route::post('password/reset','Auth\ResetPasswordController@reset');
+
+//Users Routes
+Route::get('users/{user}','UsersController@show')->name('users.show');
