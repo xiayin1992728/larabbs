@@ -17,7 +17,7 @@
                         </a>
 
                         <a href="{{ $topic->link() }}" class="pull-right">
-                            <span class="badge"> {{ $topic->rely_count }} </span>
+                            <span class="badge"> {{ $topic->reply_count }} </span>
                         </a>
                     </div>
 
