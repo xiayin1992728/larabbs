@@ -1,4 +1,3 @@
-
 <div class="media">
     <div class="avatar pull-left">
         <a href="{{ route('users.show',$notification->data['user_id']) }}">
